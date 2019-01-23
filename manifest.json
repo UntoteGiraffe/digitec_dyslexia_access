@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Digitec Galaxus Dyslexic Accessibility",
+    "version": "0.11",
+    "description": "Being dyslexic can hinder you from reading content on a website. This extension improves accesibility to digitec.ch and galaxus.ch",
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "matches": ["https://digitec.ch/*", "https://galaxus.ch/*", "https://www.digitec.ch/*", "https://www.galaxus.ch/*", "https://www.galaxus.de/*", "https://galaxus.de/*"]
+    }],
+    "browser_action": {
+        "default_icon": {
+            "16": "img/dig16.png",
+            "24": "img/dig24.png",
+            "32": "img/dig32.png"
+        },
+        
+        "default_title": "Digitec Galaxus Dyslexic Accessibility"
+    }
+}
